@@ -1,9 +1,14 @@
+@import 'header/header.css';
+@import 'header/topmenu.css';
+@import 'header/cartmenu.css';
+@import 'header/megamenu.css';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 :root {
 	--body-bgcolog: #fff;
 	--body-fontSize: 16px;
 	--body-fontColor: #434343;
 	--conteiner-size: 1440px;
+    --link-colorWhite:#fff;
 	--link-colorRed: #f0626e;
 	--link-colorBlue: #05aecc;
     --box-width: 1170px;
@@ -29,4 +34,10 @@ body {
 .box {
 	width: var(--box-width);
 	max-width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
 }
+.line{
+    border-bottom: 1px solid  #b9b9b9;
+}
+
