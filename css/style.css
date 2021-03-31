@@ -113,14 +113,18 @@ body {
 	}
 }
 @media (max-width: 445px) {
-	.container {
+	.container,
+	.box {
 		box-sizing: border-box;
-		display: flex;
+		/* display: flex;
 		flex-direction: column;
 		flex-basis: 100%;
 		min-width: 100%;
 		flex-grow: 1;
-		align-self: stretch;
+		align-self: stretch; */
+		/* margin: 0 auto; */
+		/* min-width: 100%; */
+		width: 100vw;
 	}
 	.search__input {
 		padding: 10px 5px;
