@@ -41,6 +41,7 @@ body {
 	box-shadow: 0 0 20px var(--shadow-color);
 }
 .box {
+	box-sizing: border-box;
 	width: var(--box-width);
 	max-width: 100%;
 	margin: 0 auto;
