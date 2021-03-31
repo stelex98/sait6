@@ -51,13 +51,13 @@
 .slider-image-block1_title{
 	text-transform: uppercase;
 	color: var(--link-colorRed);
-	font-size: 3.2vw;
+	font-size: 3em;
 	padding: 7px;
 	margin: 0;
 	background: var(--text-bg);
 }
 .slider-image-block1_text {
-	font-size: 0.9vw;
+	font-size: 0.9em;
 	color: var(--link-colorWhite);
 	text-transform: uppercase;
 	background: var(--text-bg);
@@ -72,7 +72,7 @@
 .slider-block1-link{
 	text-transform: uppercase;
 	margin-top: 0px;
-	font-size: .9vw;
+	font-size: .9em;
 	color: var(--link-colorWhite);
 	padding: 5px 7px;
 	transition: 0.3s linear;
@@ -91,12 +91,12 @@
 .slider-block2-title{
 	text-transform: uppercase;
 	color: var(--link-colorRed);
-	font-size: 2vw;
+	font-size: 2em;
 	padding: 7px;
 	margin: 0;
 }
 .slider-block2-text{
-	font-size: 0.9vw;
+	font-size: 0.9em;
 	color: var(--link-colorWhite);
 	text-transform: uppercase;
 	padding: 5px 10px 20px 10px;
