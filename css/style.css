@@ -111,6 +111,12 @@ body {
 		padding: 10px 5px;
 		width: 200px;
 	}
+	.header__topmenu {
+		justify-content: space-evenly;
+	}
+	.search__button-submit {
+		max-width: 70%;
+	}
 }
 @media (max-width: 445px) {
 	.search__input {
