@@ -34,3 +34,18 @@
 	flex-basis: 25%;
 	align-self: stretch;
 }
+.footer_block a{
+    color: var(--body-fontColor);
+    font-size: 0.9em;
+    padding: 7px;
+}
+.footer_block a:hover{
+color: var(--link-colorRed);
+}
+
+.footer__subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+}
