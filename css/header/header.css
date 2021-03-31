@@ -1,3 +1,6 @@
+.header {
+	box-sizing: border-box;
+}
 .header__logo {
 	margin: 0 5px;
 	background: var(--body-bgcolog);

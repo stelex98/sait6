@@ -2,10 +2,11 @@
 @import 'header/topmenu.css';
 @import 'header/cartmenu.css';
 @import 'header/megamenu.css';
+@import 'header/slider.css';
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 :root {
 	--body-bgcolog: #fff;
-	--body-fontSize: 16px;
+	--body-fontSize: 1rem;
 	--body-fontColor: #434343;
 	--conteiner-size: 1440px;
 	--link-colorWhite: #fff;
@@ -37,7 +38,6 @@ body {
 	width: var(--box-width);
 	max-width: 100%;
 	margin: 0 auto;
-	/* border: 1px solid red; */
 }
 .line {
 	border-bottom: 1px solid var(--line-color);
@@ -56,5 +56,26 @@ body {
 		-moz-transform: scale(1, 1);
 		-ms-transform: scale(1, 1);
 		-o-transform: scale(1, 1);
+	}
+}
+@media (max-width: 1024px) {
+	.header__megamenu-link {
+		padding: 15px;
+	}
+}
+@media (max-width: 740px) {
+	.header__megamenu-link {
+		padding: 8px;
+	}
+}
+@media (max-width: 640px) {
+	.header__megamenu-link {
+		padding: 5px;
+	}
+	.header__cartmenu-link {
+		max-width: 100%;
+	}
+	.header__logo img {
+		max-height: 50px;
 	}
 }
