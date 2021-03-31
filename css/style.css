@@ -8,10 +8,12 @@
 	--body-fontSize: 16px;
 	--body-fontColor: #434343;
 	--conteiner-size: 1440px;
-    --link-colorWhite:#fff;
+	--link-colorWhite: #fff;
 	--link-colorRed: #f0626e;
 	--link-colorBlue: #05aecc;
-    --box-width: 1170px;
+	--box-width: 1170px;
+	--shadow-color: #555;
+	--line-color: #b9b9b9;
 }
 * {
 	box-sizing: border-box;
@@ -29,19 +31,30 @@ body {
 	width: var(--conteiner-size);
 	max-width: 100%;
 	margin: 0 auto;
-	box-shadow: 0 0 20px #ccc;
+	box-shadow: 0 0 20px var(--shadow-color);
 }
 .box {
 	width: var(--box-width);
 	max-width: 100%;
-    margin: 0 auto;
-    /* border: 1px solid red; */
+	margin: 0 auto;
+	/* border: 1px solid red; */
 }
-.line{
-    border-bottom: 1px solid  #b9b9b9;
+.line {
+	border-bottom: 1px solid var(--line-color);
 }
-@keyframes show{
-	0%{ transform: scale(0.1,0.1); -webkit-transform: scale(0.1,0.1); -moz-transform: scale(0.1,0.1); -ms-transform: scale(0.1,0.1); -o-transform: scale(0.1,0.1); }
-	100%{ transform: scale(1,1); -webkit-transform: scale(1,1); -moz-transform: scale(1,1); -ms-transform: scale(1,1); -o-transform: scale(1,1); }
+@keyframes show {
+	0% {
+		transform: scale(0.1, 0.1);
+		-webkit-transform: scale(0.1, 0.1);
+		-moz-transform: scale(0.1, 0.1);
+		-ms-transform: scale(0.1, 0.1);
+		-o-transform: scale(0.1, 0.1);
+	}
+	100% {
+		transform: scale(1, 1);
+		-webkit-transform: scale(1, 1);
+		-moz-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		-o-transform: scale(1, 1);
+	}
 }
-

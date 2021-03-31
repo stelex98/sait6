@@ -29,7 +29,7 @@
   position: absolute;
   width: 260px;
   background: rgba(255, 255, 255, 0.884);
-  box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px var(--shadow-color);
   list-style: none;
   padding-left: 0;
 }
