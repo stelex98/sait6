@@ -5,6 +5,9 @@
 @import 'header/megamenu.css';
 @import 'header/slider.css';
 @import 'main/search.css';
+@import 'main/register.css';
+@import 'main/about.css';
+@import 'footer/footer.css';
 :root {
 	--body-bgcolog: #fff;
 	--body-fontSize: 1rem;
@@ -16,6 +19,7 @@
 	--box-width: 1170px;
 	--shadow-color: #555;
 	--line-color: #b9b9b9;
+	--text-bg: rgba(87, 75, 100, 0.89);
 }
 * {
 	box-sizing: border-box;
@@ -24,17 +28,16 @@
 	text-decoration: none;
 }
 body {
-	box-sizing: border-box;
 	background-color: var(--body-bgcolog);
 	font-size: var(--body-fontSize);
 	color: var(--body-fontColor);
 	font-family: 'Lato';
 }
 .container {
+	margin: 0 auto;
 	box-sizing: border-box;
 	width: var(--container-size);
 	max-width: 100%;
-	margin: 0 auto;
 	box-shadow: 0 0 20px var(--shadow-color);
 }
 .box {
@@ -43,7 +46,16 @@ body {
 	margin: 0 auto;
 }
 .line {
+	margin: 10px 5px;
+	padding: 0;
 	border-bottom: 1px solid var(--line-color);
+}
+.all-blocks-title {
+	padding: 0 20px;
+	color: var(--link-colorBlue);
+	font-size: 1.8em;
+	margin-bottom: 0;
+	text-transform: capitalize;
 }
 @keyframes show {
 	0% {

@@ -1,0 +1,14 @@
+.footer__copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer__copy-text{
+    font-size: 0.8em;
+    padding: 10px 20px;
+}
+.footer__copy-link{
+color: var(--link-colorRed);
+}

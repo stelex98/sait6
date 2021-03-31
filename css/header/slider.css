@@ -18,6 +18,7 @@
 	padding-right: 5px;
 }
 .header__slider-small {
+	position: relative;
 	box-sizing: border-box;
 	display: flex;
 	flex-basis: 50%;
@@ -35,36 +36,83 @@
 	min-height: 100%;
 	max-width: 100%;
 	padding: 2px 0;
-	transition: 0.3s linear;
-	z-index: 4;
+	transition: 0.3s linear;	
 }
 .slider-image:hover {
 	filter: brightness(70%);
 }
 .slider-image-block1 {
 	position: absolute;
-	bottom: 1px;
+	bottom: 0;
 	left: 0;
-	z-index: 5;
-	width: 350px;
-	max-width: 100%;
-	/* background: rgba(87, 75, 100, 0.89); */
+	max-width: 350px;
 	color: #fff;
 }
-.header__slider-small_block {
-	position: relative;
-}
-.slider-image-block1 h1 {
+.slider-image-block1_title{
+	text-transform: uppercase;
 	color: var(--link-colorRed);
-	font-size: 3.45em;
-	padding: 0;
+	font-size: 3.2vw;
+	padding: 7px;
 	margin: 0;
-	background: rgba(87, 75, 100, 0.89);
+	background: var(--text-bg);
 }
-.slider-image-block1 p {
+.slider-image-block1_text {
+	font-size: 0.9vw;
 	color: var(--link-colorWhite);
 	text-transform: uppercase;
-	background: rgba(87, 75, 100, 0.89);
-	padding: 0;
+	background: var(--text-bg);
+	padding: 5px 10px 20px 10px;
 	margin: 0;
+}
+.slider-image-block1_title-small {
+	margin-top: 2px;
+	padding: 7px 0;
+	background: var(--link-colorRed);
+}
+.slider-block1-link{
+	text-transform: uppercase;
+	margin-top: 0px;
+	font-size: .9vw;
+	color: var(--link-colorWhite);
+	padding: 5px 7px;
+	transition: 0.3s linear;
+}
+.slider-image-block1_title-small:hover {
+	background: var(--link-colorBlue);
+}
+.slider-image-block2 {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	max-width: 300px;
+	background: var(--text-bg);
+	color: #fff;
+}
+.slider-block2-title{
+	text-transform: uppercase;
+	color: var(--link-colorRed);
+	font-size: 2vw;
+	padding: 7px;
+	margin: 0;
+}
+.slider-block2-text{
+	font-size: 0.9vw;
+	color: var(--link-colorWhite);
+	text-transform: uppercase;
+	padding: 5px 10px 20px 10px;
+	margin: 0;
+}
+.header__slider-small_block{
+	position:relative;
+}
+.little-cart-stripe{
+	position:absolute;
+	bottom:10px;
+	right:0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	background: var(--text-bg);
 }

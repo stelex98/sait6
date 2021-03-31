@@ -10,8 +10,8 @@
     <script src="scripts/script.js"></script>
 </head>
 
-<body>
-    <section class="container">
+<body class="container">
+   
     <header class="header box">
         <nav class="header__topmenu">
             <a class="header__topmenu-link" href="#">Sell </a>
@@ -97,25 +97,25 @@
             <article class="header__slider-big">
                 <img class="slider-image" src="images/slider-men.jpg" alt="slider1">
                 <span class="slider-image-block1">
-                     <h1>Men’s Wear</h1> 
-                    <p>Lorem Ipsum is simply dummy text of the
+                     <h1 class="slider-image-block1_title">Men’s Wear</h1> 
+                    <p class="slider-image-block1_text">Lorem Ipsum is simply dummy text of the
                     printing and typesetting industry. Lorem</p>
-                    <a href="#">Lorem Ipsum is simply dummy </a>
+                    <h3 class="slider-image-block1_title-small"><a class="slider-block1-link" href="#">Lorem Ipsum is simply dummy </a></h3>
                 </span>
             </article>
-            <article class="header__slider-small">
-                <span class="header__slider-small_block">
+            <article class="header__slider-small">  
+                <span  class="header__slider-small">         
                     <img  class="slider-image" src="images/slider-women.jpg" alt="slider2">
-                    <span class="slider-image-block1">
-                        <h1>Men’s Wear</h1> 
-                       <p>Lorem Ipsum is simply dummy text of the
+                    <span class="slider-image-block2">
+                        <h1 class="slider-block2-title">Women’s Wear</h1> 
+                       <p class="slider-block2-text">Lorem Ipsum is simply dummy text of the
                        printing and typesetting industry. Lorem</p>
-                       <a href="#">Lorem Ipsum is simply dummy </a>
-                   </span>
-                </span>
-                <span  class="header__slider-small_block">
+                   </span> 
+                </span>                    
+                <div class="header__slider-small_block">
                     <img  class="slider-image" src="images/slider-kids.jpg" alt="slider3">
-                </span>
+                    <span class="little-cart-stripe"></span>
+                </div>
             </article>
         </section>
     </header>
@@ -133,17 +133,32 @@
             </article>
         </section>
         <section class="main__new-products">
-            new products
+            <h1 class="all-blocks-title">New products</h1>
             <p class="line"></p>
         </section>
         <section class="main__featured-products">
-            featured products
+            <h1 class="all-blocks-title">Featured products</h1>
             <p class="line"></p>
         </section>
-        <section class="main_about-us"> who we are
-            <p class="line"></p>
+        <h1 class="all-blocks-title">Who we are</h1>
+        <p class="line"></p>
+        <section class="main_about-us">
+            <p class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting 
+            industry. Lorem Ipsum has been the industry's standard dummy text 
+            ever since the 1500s, when an unknown printer took a galley of type 
+            and scrambled it to make a type specimen book. It has survived not 
+            only five centuries, but also the leap into electronic typesetting,
+             remaining essentially unchanged. It was popularised in the 1960s
+              with the release of Letraset sheets containing Lorem Ipsum passages,
+               and more recently with desktop publishing software like Aldus 
+               PageMaker including versions of Lorem Ipsum.</p>
+               <div class="register">
+                   <img class="register__img" src="images/register1.jpg" alt="register1">
+                   <img class="register__img"  src="images/register2.jpg" alt="register2">
+                   <img class="register__img" src="images/register3.jpg" alt="register3">                   
+               </div>
+               <button class="register__button">Register now</button>
         </section>
-        <section class="main__register">register</section>
     </main>
     <footer class="footer box">
         <section class="footer__list-links">
@@ -151,11 +166,14 @@
             list links
             <p class="line"></p>
         </section>
-        <section class="footer__copyright"> copyright
-            <p class="line"></p>
-        </section>
+        <section class="footer__copyright"> 
+            <p class="footer__copy-text">Copyright © 2021 Gift Shop,  All right reserved</p>
+            <p class="footer__copy-text">Anatoliy Komarov 2021 / FLEX</p>
+            <p class="footer__copy-text">Designed by <a class="footer__copy-link" href="#">Amysxain</a></p>
+         </section>
+         <p class="line"></p>
     </footer>
-</section>
+
 </body>
 
 </html>
