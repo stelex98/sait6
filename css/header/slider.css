@@ -6,6 +6,7 @@
 	justify-content: space-between;
 	align-items: center;
 	flex-basis: 100%;
+	cursor: pointer;
 }
 .header__slider-big {
 	box-sizing: border-box;
@@ -32,5 +33,9 @@
 	flex-grow: 1;
 	min-height: 100%;
 	max-width: 100%;
-    padding:2px 0;
+	padding: 2px 0;
+	transition: 0.3s linear;
+}
+.slider-image:hover {
+	filter: brightness(70%);
 }
