@@ -8,11 +8,11 @@
 	max-width: 100%;
 }
 .register__img {
-	margin: 10px 1px 30px 1px;
 	max-width: 100%;
 	padding: 10px;
 }
 .register__button {
+	cursor: pointer;
 	margin-top: 20px;
 	background: var(--link-colorBlue);
 	color: var(--link-colorWhite);
