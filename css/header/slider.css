@@ -9,6 +9,7 @@
 	cursor: pointer;
 }
 .header__slider-big {
+	position: relative;
 	box-sizing: border-box;
 	flex-basis: 68%;
 	max-width: 100%;
@@ -35,7 +36,35 @@
 	max-width: 100%;
 	padding: 2px 0;
 	transition: 0.3s linear;
+	z-index: 4;
 }
 .slider-image:hover {
 	filter: brightness(70%);
+}
+.slider-image-block1 {
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	z-index: 5;
+	width: 350px;
+	max-width: 100%;
+	/* background: rgba(87, 75, 100, 0.89); */
+	color: #fff;
+}
+.header__slider-small_block {
+	position: relative;
+}
+.slider-image-block1 h1 {
+	color: var(--link-colorRed);
+	font-size: 3.45em;
+	padding: 0;
+	margin: 0;
+	background: rgba(87, 75, 100, 0.89);
+}
+.slider-image-block1 p {
+	color: var(--link-colorWhite);
+	text-transform: uppercase;
+	background: rgba(87, 75, 100, 0.89);
+	padding: 0;
+	margin: 0;
 }

@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @import 'header/header.css';
 @import 'header/topmenu.css';
 @import 'header/cartmenu.css';
 @import 'header/megamenu.css';
 @import 'header/slider.css';
 @import 'main/search.css';
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 :root {
 	--body-bgcolog: #fff;
 	--body-fontSize: 1rem;
@@ -65,10 +65,20 @@ body {
 	.header__megamenu-link {
 		padding: 15px;
 	}
+	.search__input {
+		padding: 25px 20px;
+		width: 300px;
+	}
 }
 @media (max-width: 740px) {
 	.header__megamenu-link {
 		padding: 8px;
+	}
+	.search__input {
+		padding: 20px 10px;
+	}
+	.search__button {
+		margin: 0;
 	}
 }
 @media (max-width: 640px) {
@@ -84,6 +94,10 @@ body {
 	.header__logo img {
 		max-height: 50px;
 	}
+	.search__input {
+		padding: 10px 5px;
+		width: 200px;
+	}
 }
 @media (max-width: 445px) {
 	.container {
@@ -94,5 +108,9 @@ body {
 		min-width: 100%;
 		flex-grow: 1;
 		align-self: stretch;
+	}
+	.search__input {
+		padding: 10px 5px;
+		width: 100px;
 	}
 }
