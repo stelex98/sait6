@@ -10,7 +10,8 @@
     <script src="scripts/script.js"></script>
 </head>
 
-<body class="container">
+<body>
+    <section class="container">
     <header class="header box">
         <nav class="header__topmenu">
             <a class="header__topmenu-link" href="#">Sell </a>
@@ -101,7 +102,18 @@
         </section>
     </header>
     <main class="main box">
-        <section class="main__search">search</section>
+        <section class="main__search">
+            <article class="main__search-block1">
+                <form class="main__search-button" action="#">
+                    <input class="search__input" type="search" name="search" id="s1" size="40" value="" placeholder="Search your product here ( e.g.: Silver diamond ring )">
+                    <button class="search__button" type="submit"><img src="images/search.png" alt="search-button"></button>
+                </form>               
+                <span><img class="search-image" src="images/crafts.jpg" alt="crafts"></span>
+            </article>
+            <article class="main__search-block2">
+                <span><img  class="search-image" src="images/jewelry.jpg" alt="jewelry"></span>
+            </article>
+        </section>
         <section class="main__new-products">
             new products
             <p class="line"></p>
@@ -125,6 +137,7 @@
             <p class="line"></p>
         </section>
     </footer>
+</section>
 </body>
 
 </html>
