@@ -26,17 +26,19 @@
 	color: var(--link-colorRed);
 }
 .header__megamenu ul li .header__megamenu-internallist {
-	visibility: hidden;
+	/* visibility: hidden; */
+	display: none;
 	position: absolute;
 	width: 260px;
 	background: rgba(255, 255, 255, 0.884);
 	box-shadow: 0 0 10px var(--shadow-color);
 	list-style: none;
 	padding-left: 0;
-	z-index:10;
+	z-index: 10;
 }
 .header__megamenu ul li:hover .header__megamenu-internallist {
-	visibility: visible;
+	/* visibility: visible; */
+	display: block;
 	animation: show 0.1s ease-in;
 	-webkit-animation: show 0.1s ease-in;
 }
