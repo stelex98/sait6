@@ -65,7 +65,7 @@ let counter = 0;
 let offset = 0;
 // if(blockId=="slide1"){ images = document.querySelectorAll('#slide1 img');}
 // if(blockId=="slide2"){ images = document.querySelectorAll('#slide2 img');}
-images = document.querySelectorAll(`#${blockId} img`);
+images = document.querySelectorAll(`#${blockId} .product__cart-new`);
 let allImgAmaunt = images.length;
 
 function shiftLeft() {

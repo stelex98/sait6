@@ -147,28 +147,29 @@ body {
 	align-items: flex-end;
 }
 .arrows {
-	margin-top:20px;
+	margin-top: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
 }
-.arrow-left,.arrow-right {
+.arrow-left,
+.arrow-right {
 	padding: 15px;
 	content: url('../images/arrow-left.png');
 	background: #3c3c3c;
 	border-right: 1px solid var(--link-colorWhite);
 }
-.arrow-right {	
-	content: url('../images/arrow-right.png');	
+.arrow-right {
+	content: url('../images/arrow-right.png');
 }
-.arrow-left:hover{
+.arrow-left:hover {
 	background: var(--link-colorBlue);
 }
-.arrow-left:hover{
+.arrow-left:hover {
 	background: var(--link-colorBlue);
 }
-.arrow-right:hover{
+.arrow-right:hover {
 	background: var(--link-colorRed);
 }
 @keyframes show {

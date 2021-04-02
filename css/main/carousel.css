@@ -5,5 +5,5 @@
 .carousel__list-products {
 	display: inline-block;
 	width: 1000%;
-    transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
 }
