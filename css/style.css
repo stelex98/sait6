@@ -7,6 +7,7 @@
 @import "main/search.css";
 @import "main/register.css";
 @import "main/about.css";
+@import "main/carousel.css";
 @import "footer/footer.css";
 :root {
 	--body-bgcolog: #fff;
