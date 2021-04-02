@@ -1,9 +1,18 @@
 .product__cart-new {
+	cursor: pointer;
 	margin: 10px 8px;
+	transition: 0.3s linear;
 }
 .product__cart-new_img {
 	width: 370px;
 	max-width: 100%;
 }
+.product__cart-new:hover {
+	filter: brightness(45%);
+}
+
 .product__cart {
+	min-width: 300px;
+	min-height: 200px;
+	border: 1px solid red
 }

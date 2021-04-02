@@ -1,4 +1,20 @@
- karusel1=document.getElementById('slide1');
+
+let blockId ="slide1";
+let left = document.getElementById('left1');
+let right = document.getElementById('right1');
+// click = document.querySelectorAll('.arrows');
+// slide1.addEventListener('click', (e) => {
+// 	blockId = 'slide1';
+// 	left = document.getElementById(e.target.id);
+// 	right = document.getElementById(e.target.id);
+// });
+// slide2.addEventListener('click', (e) => {
+// 	blockId = 'slide2';
+// 	left = document.getElementById(e.target.id);
+// 	right = document.getElementById(e.target.id);
+// });
+
+karusel1 = document.getElementById(blockId);
 // ПЕРЕТАСКИВАНИЕ
 let xCoordinateMovement = 0;
 let xCoordinateStart = 0;
@@ -19,21 +35,21 @@ function startMovement(e) {
 	});
 }
 ////// left & right
-left1.addEventListener('click', shiftLeft);
-left1.addEventListener('mousedown', function(down) {
+left.addEventListener('click', shiftLeft);
+left.addEventListener('mousedown', function(down) {
 	if (down.button !== 0) return;
 	let interval = setInterval(shiftLeft, 500);
-	left1.addEventListener('mouseup', (upe) => {
+	left.addEventListener('mouseup', (upe) => {
 		if (upe.button === 0) {
 			clearInterval(interval);
 		}
 	});
 });
-right1.addEventListener('click', shiftRight);
-right1.addEventListener('mousedown', function(down) {
+right.addEventListener('click', shiftRight);
+right.addEventListener('mousedown', function(down) {
 	if (down.button !== 0) return;
 	let interval2 = setInterval(shiftRight, 500);
-	right1.addEventListener('mouseup', function(up) {
+	right.addEventListener('mouseup', function(up) {
 		if (up.button === 0) {
 			clearInterval(interval2);
 		}
@@ -47,7 +63,9 @@ let shiftX = imgWidth; // на сколько сдвинуть по оси x
 let shiftX2 = 0;
 let counter = 0;
 let offset = 0;
-let images = document.querySelectorAll('#slide1 img');
+// if(blockId=="slide1"){ images = document.querySelectorAll('#slide1 img');}
+// if(blockId=="slide2"){ images = document.querySelectorAll('#slide2 img');}
+images = document.querySelectorAll(`#${blockId} img`);
 let allImgAmaunt = images.length;
 
 function shiftLeft() {
