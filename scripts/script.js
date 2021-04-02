@@ -1,3 +1,4 @@
+ karusel1=document.getElementById('slide1');
 // ПЕРЕТАСКИВАНИЕ
 let xCoordinateMovement = 0;
 let xCoordinateStart = 0;
@@ -18,42 +19,38 @@ function startMovement(e) {
 	});
 }
 ////// left & right
-left.addEventListener('click', shiftLeft);
-left.addEventListener('mousedown', function(down) {
+left1.addEventListener('click', shiftLeft);
+left1.addEventListener('mousedown', function(down) {
 	if (down.button !== 0) return;
 	let interval = setInterval(shiftLeft, 500);
-	left.addEventListener('mouseup', (upe) => {
+	left1.addEventListener('mouseup', (upe) => {
 		if (upe.button === 0) {
 			clearInterval(interval);
-			left.removeEventListener('mouseup', () => {}, false);
 		}
 	});
 });
-right.addEventListener('click', shiftRight);
-right.addEventListener('mousedown', function(down) {
+right1.addEventListener('click', shiftRight);
+right1.addEventListener('mousedown', function(down) {
 	if (down.button !== 0) return;
 	let interval2 = setInterval(shiftRight, 500);
-	right.addEventListener('mouseup', function(up) {
+	right1.addEventListener('mouseup', function(up) {
 		if (up.button === 0) {
 			clearInterval(interval2);
-			right.removeEventListener('mouseup', () => {}, false);
 		}
 	});
 });
 
 //SLIDER
-const imgWidth = 320; // ширина картинки+ отступ
+const imgWidth = 386; // ширина картинки+ отступ
 const amountImgForShow = 3; // сколько картинок показываем
 let shiftX = imgWidth; // на сколько сдвинуть по оси x
 let shiftX2 = 0;
 let counter = 0;
 let offset = 0;
-let images = document.querySelectorAll('.karusel img');
+let images = document.querySelectorAll('#slide1 img');
 let allImgAmaunt = images.length;
 
 function shiftLeft() {
-	left.removeEventListener('mousedown', () => {}, false);
-	left.removeEventListener('click', () => {}, false);
 	if (offset != 0) shiftX += offset;
 	if (counter == allImgAmaunt - amountImgForShow) {
 		shiftX -= offset;
@@ -66,8 +63,6 @@ function shiftLeft() {
 }
 
 function shiftRight() {
-	right.removeEventListener('mousedown', () => {}, false);
-	right.removeEventListener('click', () => {}, false);
 	shiftX2 = -shiftX + imgWidth;
 	shiftX = -shiftX2;
 	if (shiftX == 0 && shiftX2 == 0) {

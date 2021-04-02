@@ -1,3 +1,9 @@
-.product__cart{
-    
+.product__cart-new {
+	margin: 10px 8px;
+}
+.product__cart-new_img {
+	width: 370px;
+	max-width: 100%;
+}
+.product__cart {
 }
