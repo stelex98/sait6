@@ -1,107 +1,107 @@
 .header__slider {
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	flex-basis: 100%;
-	cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 100%;
+  cursor: pointer;
 }
 .header__slider-big {
-	position: relative;
-	box-sizing: border-box;
-	flex-basis: 68%;
-	max-width: 100%;
-	align-self: stretch;
-	flex-grow: 1;
-	padding-right: 5px;
+  position: relative;
+  box-sizing: border-box;
+  flex-basis: 68%;
+  max-width: 100%;
+  align-self: stretch;
+  flex-grow: 1;
+  padding-right: 5px;
 }
 .header__slider-small {
-	position: relative;
-	box-sizing: border-box;
-	display: flex;
-	flex-basis: 50%;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 100%;
-	align-self: stretch;
-	flex-grow: 1;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  align-self: stretch;
+  flex-grow: 1;
 }
 
 .slider-image {
-	align-self: stretch;
-	flex-grow: 1;
-	min-height: 100%;
-	max-width: 100%;
-	padding: 2px 0;
-	transition: 0.3s linear;
+  align-self: stretch;
+  flex-grow: 1;
+  min-height: 100%;
+  max-width: 100%;
+  padding: 2px 0;
+  transition: 0.3s linear;
 }
 .slider-image:hover {
-	filter: brightness(70%);
+  filter: brightness(70%);
 }
 .slider-image-block1 {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	max-width: 350px;
-	color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 350px;
+  color: #fff;
 }
-.slider-image-block1_title {
-	text-transform: uppercase;
-	color: var(--link-colorRed);
-	font-size: 3em;
-	padding: 7px;
-	margin: 0;
-	background: var(--text-bg);
+.slider-image-block1-title {
+  text-transform: uppercase;
+  color: var(--link-colorRed);
+  font-size: 3em;
+  padding: 7px;
+  margin: 0;
+  background: var(--text-bg);
 }
-.slider-image-block1_text {
-	font-size: 0.9em;
-	color: var(--link-colorWhite);
-	text-transform: uppercase;
-	background: var(--text-bg);
-	padding: 5px 10px 20px 10px;
-	margin: 0;
+.slider-image-block1-text {
+  font-size: 0.9em;
+  color: var(--link-colorWhite);
+  text-transform: uppercase;
+  background: var(--text-bg);
+  padding: 5px 10px 20px 10px;
+  margin: 0;
 }
-.slider-image-block1_title-small {
-	margin-top: 2px;
-	padding: 7px 0;
-	background: var(--link-colorRed);
+.slider-image-block1-title-small {
+  margin-top: 2px;
+  padding: 7px 0;
+  background: var(--link-colorRed);
 }
 .slider-block1-link {
-	text-transform: uppercase;
-	margin-top: 0px;
-	font-size: .9em;
-	color: var(--link-colorWhite);
-	padding: 5px 7px;
-	transition: 0.3s linear;
+  text-transform: uppercase;
+  margin-top: 0px;
+  font-size: 0.9em;
+  color: var(--link-colorWhite);
+  padding: 5px 7px;
+  transition: 0.3s linear;
 }
-.slider-image-block1_title-small:hover {
-	background: var(--link-colorBlue);
+.slider-image-block1-title-small:hover {
+  background: var(--link-colorBlue);
 }
 .slider-image-block2 {
-	position: absolute;
-	bottom: 10px;
-	left: 0;
-	max-width: 300px;
-	background: var(--text-bg);
-	color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  max-width: 300px;
+  background: var(--text-bg);
+  color: #fff;
 }
 .slider-block2-title {
-	text-transform: uppercase;
-	color: var(--link-colorRed);
-	font-size: 2em;
-	padding: 7px;
-	margin: 0;
+  text-transform: uppercase;
+  color: var(--link-colorRed);
+  font-size: 2em;
+  padding: 7px;
+  margin: 0;
 }
 .slider-block2-text {
-	font-size: 0.9em;
-	color: var(--link-colorWhite);
-	text-transform: uppercase;
-	padding: 5px 10px 20px 10px;
-	margin: 0;
+  font-size: 0.9em;
+  color: var(--link-colorWhite);
+  text-transform: uppercase;
+  padding: 5px 10px 20px 10px;
+  margin: 0;
 }
-.header__slider-small_block {
-	position: relative;
+.header__slider-small-block {
+  position: relative;
 }

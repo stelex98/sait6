@@ -1,9 +1,17 @@
 .carousel {
-	display: block;
-	overflow: hidden;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+  width: var(--box-width);
+}
+.carousel2 {
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+  width: var(--box-width);
 }
 .carousel__list-products {
-	display: inline-block;
-	width: 1000%;
-	transition: 0.5s ease-out;
+  display: inline-block;
+  width: 5000%;
+  transition: 0.5s ease-out;
 }

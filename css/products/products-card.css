@@ -4,9 +4,9 @@
 	margin: 10px 8px;
 	transition: 0.3s linear;
 }
-.product__card-new_img {
-	width: 370px;
-	max-width: 100%;
+.product__card-new-img {
+	max-width: 370px;
+	/* max-width: 100%; */
 }
 .product__card-new:hover {
 	filter: brightness(45%);
@@ -23,11 +23,11 @@
 	margin: 10px 9px;
 	display: inline-block;
 }
-.product__card_img {
+.product__card-img {
 	max-width: 100%;
 	transition: 0.3s ease-out;
 }
-.product__card_img:hover {
+.product__card-img:hover {
 	box-shadow: 0 0 10px rgb(172, 171, 171);
 }
 .product__description {
