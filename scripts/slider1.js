@@ -79,9 +79,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     if (clientWidth > 1200) {
       document.querySelector(".carousel").style = "width: var(--box-width)";
-      amountImgForShow = 3;
+      amountImgForShow = 3;  imgWidth = 388;
       document.querySelector(".carousel2").style = "width: var(--box-width)";
-      amountImgForShow2 = 4;
+      amountImgForShow2 = 4;  imgWidth2 = 290;
     }
   };
 });
