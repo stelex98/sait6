@@ -13,18 +13,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
 function size(){
   clientWidth = document.documentElement.clientWidth;
     if (clientWidth <= 1200 && clientWidth > 895) {
-      document.querySelector(".carousel").style.cssText = "width: 776px; margin: 0 auto;display: block;overflow: hidden;";
+      // document.querySelector(".carousel").style.cssText = "width: 776px; margin: 0 auto;display: block;overflow: hidden;";
       amountImgForShow = 2;
-      document.querySelector(".carousel2").style.cssText = "width: 870px; margin: 0 auto;display: block;overflow: hidden;";
+      // document.querySelector(".carousel2").style.cssText = "width: 870px; margin: 0 auto;display: block;overflow: hidden;";
       amountImgForShow2 = 3;
     } else if (clientWidth <= 895 && clientWidth > 780) {
-      document.querySelector(".carousel2").style.cssText = "width: 580px; margin: 0 auto;display: block;overflow: hidden;";
+      // document.querySelector(".carousel2").style.cssText = "width: 580px; margin: 0 auto;display: block;overflow: hidden;";
       amountImgForShow2 = 2;
     } else if (clientWidth <= 780 && clientWidth > 580) {
-      document.querySelector(".carousel").style.cssText = "width: 388px; margin: 0 auto;display: block;overflow: hidden;";
+      // document.querySelector(".carousel").style.cssText = "width: 388px; margin: 0 auto;display: block;overflow: hidden;";
       amountImgForShow = 1;
     } else if (clientWidth <= 580 && clientWidth > 390) {
-      document.querySelector(".carousel2").style.cssText = "width: 290px; margin: 0 auto;display: block;overflow: hidden;";
+      // document.querySelector(".carousel2").style.cssText = "width: 290px; margin: 0 auto;display: block;overflow: hidden;";
       amountImgForShow2 = 1;
     } 
     // else if (clientWidth <= 390) {
@@ -36,16 +36,16 @@ function size(){
     //   imgWidth = 260; 
     // }
     if (clientWidth > 1200) {
-      document.querySelector(".carousel").style.cssText = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
+      // document.querySelector(".carousel").style.cssText = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
       amountImgForShow = 3;  imgWidth = 388;
-      document.querySelector(".carousel2").style.cssText = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
+      // document.querySelector(".carousel2").style.cssText = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
       amountImgForShow2 = 4;  imgWidth2 = 290;
     }
 }
 
-document.querySelector(".carousel").style.cssText = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
+// document.querySelector(".carousel").style.cssText = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
 let amountImgForShow = 3; //amount of  img slider1
-document.querySelector(".carousel2").style.cssText = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
+// document.querySelector(".carousel2").style.cssText = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
 let amountImgForShow2 = 4; // amount of  img slider2
 
 karusel1 = document.getElementById(blockId);
