@@ -1,16 +1,16 @@
-let imgWidth = 388; // width img+padding slider1
-let amountImgForShow = 3; //amount of  img slider1
-let imgWidth2 = 290; // width img+padding slider2
-let amountImgForShow2 = 4; // amount of  img slider2
+imgWidth = 388; // width img+padding slider1
+amountImgForShow = 3; //amount of  img slider1
+imgWidth2 = 290; // width img+padding slider2
+amountImgForShow2 = 4; // amount of  img slider2
 
 // let shiftX=0;
-let imgWidth_dop=0;
+let imgWidth_dop = 0;
 let blockId = "slide1";
 let left = document.getElementById("left1");
 let right = document.getElementById("right1");
 const timeout = 500;
-document.addEventListener("DOMContentLoaded", function (event) {  
-  window.onresize = ()=>{
+document.addEventListener("DOMContentLoaded", function (event) {
+  window.onresize = () => {
     clientWidth = document.documentElement.clientWidth;
     if (clientWidth <= 1200 && clientWidth > 895) {
       amountImgForShow = 2;
@@ -21,20 +21,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
       amountImgForShow = 1;
     } else if (clientWidth <= 580 && clientWidth > 390) {
       amountImgForShow2 = 1;
-    } 
+    }
     // else if (clientWidth <= 390) {
     //   document.querySelector(".carousel").style = "width: 260px";
     //   img_sl1 = document.querySelectorAll(".product__card-new-img");
     //   for (i = 0; i < img_sl1.length; i++) {
     //     img_sl1[i].style = "width:250px; ";
     //   }
-    //   imgWidth = 260; 
+    //   imgWidth = 260;
     // }
     if (clientWidth > 1200) {
-      amountImgForShow = 3;  imgWidth = 388;
-      amountImgForShow2 = 4;  imgWidth2 = 290;
+      amountImgForShow = 3;
+      imgWidth = 388;
+      amountImgForShow2 = 4;
+      imgWidth2 = 290;
     }
-  } 
+  };
 });
 
 karusel1 = document.getElementById(blockId);
