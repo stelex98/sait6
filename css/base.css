@@ -1,9 +1,9 @@
-*::after,
+/* *::after,
 *::before {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-}
+} */
 * {
   box-sizing: border-box;
 }
@@ -11,7 +11,7 @@
   text-decoration: none;
 }
 html {
-  font-size: 62.5%;
+  font-size: 1em;
 }
 body {
   background-color: var(--body-bgcolog);

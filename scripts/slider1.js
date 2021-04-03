@@ -5,9 +5,9 @@ let left = document.getElementById("left1");
 let right = document.getElementById("right1");
 const timeout = 500;
 document.querySelector(".carousel").style = "width: var(--box-width)";
-let amountImgForShow = 3;//amount of  img slider1
+let amountImgForShow = 3; //amount of  img slider1
 document.querySelector(".carousel2").style = "width: var(--box-width)";
-let amountImgForShow2 = 4;// amount of  img slider2
+let amountImgForShow2 = 4; // amount of  img slider2
 
 karusel1 = document.getElementById(blockId);
 // movement
@@ -66,9 +66,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     } else if (clientWidth <= 780 && clientWidth > 580) {
       document.querySelector(".carousel").style = "width: 388px";
       amountImgForShow = 1;
-    } else if (clientWidth <= 580) {
+    } else if (clientWidth <= 580 && clientWidth > 390) {
       document.querySelector(".carousel2").style = "width: 290px";
       amountImgForShow2 = 1;
+    } else if (clientWidth <= 390) {
+      document.querySelector(".carousel").style = "width: 290px";
+      img_sl1 = document.querySelectorAll(".product__card-new-img");
+      for (i = 0; i < img_sl1.length; i++) {
+        img_sl1[i].style = "width: 280px; padding: 5px;";
+      }
+      imgWidth = 290;
     }
     if (clientWidth > 1200) {
       document.querySelector(".carousel").style = "width: var(--box-width)";
