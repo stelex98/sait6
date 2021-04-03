@@ -1,5 +1,7 @@
 let imgWidth = 388; // width img+padding slider1
 let imgWidth2 = 290; // width img+padding slider2
+let amountImgForShow2 = 4; // amount of  img slider2
+let amountImgForShow = 3; //amount of  img slider1
 // let shiftX=0;
 let imgWidth_dop=0;
 let blockId = "slide1";
@@ -44,9 +46,9 @@ function size(){
 }
 
 // document.querySelector(".carousel").style.cssText = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
-let amountImgForShow = 3; //amount of  img slider1
+//let amountImgForShow = 3; //amount of  img slider1
 // document.querySelector(".carousel2").style.cssText = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
-let amountImgForShow2 = 4; // amount of  img slider2
+//let amountImgForShow2 = 4; // amount of  img slider2
 
 karusel1 = document.getElementById(blockId);
 // movement
