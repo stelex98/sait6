@@ -3,6 +3,13 @@ left2 = document.getElementById("left2");
 right2 = document.getElementById("right2");
 
 karusel2 = document.getElementById(blockId2);
+let shiftX_2 = imgWidth2; // на сколько сдвинуть по оси x
+let shiftX_22 = 0;
+let counter2 = 0;
+let offset2 = 0;
+const images2 = document.querySelectorAll(`#slide2 .product__card`);
+const allImgAmaunt2 = images2.length;
+
 // movement
 let xCoordinateMovement2 = 0;
 let xCoordinateStart2 = 0;
@@ -45,16 +52,11 @@ right2.addEventListener("mousedown", function (down) {
 });
 
 //SLIDER
-let shiftX_2 = imgWidth2; // на сколько сдвинуть по оси x
-let shiftX_22 = 0;
-let counter2 = 0;
-let offset2 = 0;
-images2 = document.querySelectorAll(`#${blockId2} .product__card`);
-let allImgAmaunt2 = images2.length;
 
 function shiftLeft2() {
+  console.log(allImgAmaunt2 + " | " + amountImgForShow2);
   if (offset2 != 0) shiftX_2 += offset2;
-  if (counter2 == allImgAmaunt2 - amountImgForShow2) {
+  if (counter2 == (allImgAmaunt2 - amountImgForShow2)) {
     shiftX_2 -= offset2;
     counter2--;
     offset2 = 0;
