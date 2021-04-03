@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 @import "./base.css";
-@import "./breakpoints.css";
 @import "./header/header.css";
 @import "./header/topmenu.css";
 @import "./header/cartmenu.css";
@@ -12,3 +11,4 @@
 @import "./main/carousel.css";
 @import "./products/products-card.css";
 @import "./footer/footer.css";
+@import "./breakpoints.css";
