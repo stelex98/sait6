@@ -10,7 +10,7 @@
 @import "footer/footer.css";
 :root {
 	--body-bgcolog: #fff;
-	--body-fontSize: 1em;
+	--body-fontSize: 1.2rem;
 	--body-fontColor: #434343;
 	--container-size: 1440px;
 	--link-colorWhite: #fff;
@@ -28,6 +28,9 @@
 }
 * a {
 	text-decoration: none;
+}
+html {
+    font-size: 62.5%;
 }
 body {
 	background-color: var(--body-bgcolog);
