@@ -1,14 +1,14 @@
-.product__cart-new {
+.product__card-new {
 	position: relative;
 	cursor: pointer;
 	margin: 10px 8px;
 	transition: 0.3s linear;
 }
-.product__cart-new_img {
+.product__card-new_img {
 	width: 370px;
 	max-width: 100%;
 }
-.product__cart-new:hover {
+.product__card-new:hover {
 	filter: brightness(45%);
 }
 .new-product {
@@ -17,17 +17,17 @@
 	right: 10px;
 }
 
-.product__cart {
+.product__card {
 	cursor: pointer;
 	position: relative;
 	margin: 10px 9px;
 	display: inline-block;
 }
-.product__cart_img {
+.product__card_img {
 	max-width: 100%;
 	transition: 0.3s ease-out;
 }
-.product__cart_img:hover {
+.product__card_img:hover {
 	box-shadow: 0 0 10px rgb(172, 171, 171);
 }
 .product__description {

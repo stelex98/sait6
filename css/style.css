@@ -8,7 +8,7 @@
 @import "main/register.css";
 @import "main/about.css";
 @import "main/carousel.css";
-@import 'products/products-cart.css';
+@import 'products/products-card.css';
 @import "footer/footer.css";
 :root {
 	--body-bgcolog: #fff;
