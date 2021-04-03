@@ -54,6 +54,7 @@ body {
 }
 .container {
   margin: 0 auto;
+  padding: 0 5px;
   box-sizing: border-box;
   width: var(--container-size);
   max-width: 100%;
