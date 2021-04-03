@@ -43,7 +43,10 @@
 .search-image:hover {
 	filter: brightness(70%);
 }
-
+.bigtext {
+	font-size: 2em;
+	text-transform: uppercase;
+}
 .main__search-button {
 	background: var(--link-colorRed);
 	display: flex;
