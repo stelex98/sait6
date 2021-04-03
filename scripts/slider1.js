@@ -1,14 +1,51 @@
 let imgWidth = 388; // width img+padding slider1
 let imgWidth2 = 290; // width img+padding slider2
-let shiftX=0;
+// let shiftX=0;
 let imgWidth_dop=0;
 let blockId = "slide1";
 let left = document.getElementById("left1");
 let right = document.getElementById("right1");
 const timeout = 500;
-document.querySelector(".carousel").style = "width: var(--box-width)";
+size();
+document.addEventListener("DOMContentLoaded", function (event) {  
+  window.onresize = size(); 
+});
+function size(){
+  clientWidth = document.documentElement.clientWidth;
+    if (clientWidth <= 1200 && clientWidth > 895) {
+      document.querySelector(".carousel").style = "width: 776px; margin: 0 auto;display: block;overflow: hidden;";
+      amountImgForShow = 2;
+      document.querySelector(".carousel2").style = "width: 870px; margin: 0 auto;display: block;overflow: hidden;";
+      amountImgForShow2 = 3;
+    } else if (clientWidth <= 895 && clientWidth > 780) {
+      document.querySelector(".carousel2").style = "width: 580px; margin: 0 auto;display: block;overflow: hidden;";
+      amountImgForShow2 = 2;
+    } else if (clientWidth <= 780 && clientWidth > 580) {
+      document.querySelector(".carousel").style = "width: 388px; margin: 0 auto;display: block;overflow: hidden;";
+      amountImgForShow = 1;
+    } else if (clientWidth <= 580 && clientWidth > 390) {
+      document.querySelector(".carousel2").style = "width: 290px; margin: 0 auto;display: block;overflow: hidden;";
+      amountImgForShow2 = 1;
+    } 
+    // else if (clientWidth <= 390) {
+    //   document.querySelector(".carousel").style = "width: 260px";
+    //   img_sl1 = document.querySelectorAll(".product__card-new-img");
+    //   for (i = 0; i < img_sl1.length; i++) {
+    //     img_sl1[i].style = "width:250px; ";
+    //   }
+    //   imgWidth = 260; 
+    // }
+    if (clientWidth > 1200) {
+      document.querySelector(".carousel").style = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
+      amountImgForShow = 3;  imgWidth = 388;
+      document.querySelector(".carousel2").style = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
+      amountImgForShow2 = 4;  imgWidth2 = 290;
+    }
+}
+
+document.querySelector(".carousel").style = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
 let amountImgForShow = 3; //amount of  img slider1
-document.querySelector(".carousel2").style = "width: var(--box-width)";
+document.querySelector(".carousel2").style = "width: var(--box-width); margin: 0 auto;display: block;overflow: hidden;";
 let amountImgForShow2 = 4; // amount of  img slider2
 
 karusel1 = document.getElementById(blockId);
@@ -54,43 +91,7 @@ right.addEventListener("mousedown", function (down) {
 });
 
 //SLIDER
-document.addEventListener("DOMContentLoaded", function (event) {
-  window.onresize = () => {
-    clientWidth = document.documentElement.clientWidth;
-    if (clientWidth <= 1200 && clientWidth > 895) {
-      document.querySelector(".carousel").style = "width: 776px";
-      amountImgForShow = 2;
-      document.querySelector(".carousel2").style = "width: 870px";
-      amountImgForShow2 = 3;
-    } else if (clientWidth <= 895 && clientWidth > 780) {
-      document.querySelector(".carousel2").style = "width: 580px";
-      amountImgForShow2 = 2;
-    } else if (clientWidth <= 780 && clientWidth > 580) {
-      document.querySelector(".carousel").style = "width: 388px";
-      amountImgForShow = 1;
-    } else if (clientWidth <= 580 && clientWidth > 390) {
-      document.querySelector(".carousel2").style = "width: 290px";
-      amountImgForShow2 = 1;
-    } else if (clientWidth <= 390) {
-      document.querySelector(".carousel").style = "width: 260px";
-      img_sl1 = document.querySelectorAll(".product__card-new-img");
-      for (i = 0; i < img_sl1.length; i++) {
-        img_sl1[i].style = "width:250px; ";
-      }
-      imgWidth = 260; 
-    }
-    if (clientWidth > 1200) {
-      document.querySelector(".carousel").style = "width: var(--box-width)";
-      amountImgForShow = 3;  imgWidth = 388;
-      document.querySelector(".carousel2").style = "width: var(--box-width)";
-      amountImgForShow2 = 4;  imgWidth2 = 290;
-    }
-  };
-});
-
-shiftX = imgWidth; // на сколько сдвинуть по оси x
-
-
+let shiftX = imgWidth; // на сколько сдвинуть по оси x
 let shiftX2 = 0;
 let counter = 0;
 let offset = 0;
