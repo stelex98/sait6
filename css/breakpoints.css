@@ -166,3 +166,15 @@
     width: 290px;
   }
 }
+@media (max-width: 300px) {
+  .carousel {
+    width: 200px;
+  }
+  /* .carousel2 {
+    width: 200px;
+  }
+  .product__card-img{
+    max-width: 100%;
+    flex-shrink: 2;
+  } */
+}
