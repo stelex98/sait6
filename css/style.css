@@ -12,7 +12,7 @@
 @import "footer/footer.css";
 :root {
 	--body-bgcolog: #fff;
-	--body-fontSize: 1.2rem;
+	--body-fontSize: 1.5rem;
 	--body-fontColor: #434343;
 	--container-size: 1440px;
 	--link-colorWhite: #fff;
@@ -24,6 +24,12 @@
 	--line-color: #b9b9b9;
 	--text-bg: rgba(87, 75, 100, 0.651);
 	--stripe-price-bc: #323232;
+}
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 * {
 	box-sizing: border-box;
