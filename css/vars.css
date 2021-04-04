@@ -9,9 +9,10 @@
   --link-colorBlue-dark: #00a1be;
   --box-width: 1170px;
   --shadow-color: #555;
-  --shadow-colorBright:#acabab;
-  --product-card-border:rgb(231, 229, 229);
+  --shadow-colorBright: #acabab;
+  --product-card-border: rgb(231, 229, 229);
   --line-color: #b9b9b9;
   --text-bg: rgba(87, 75, 100, 0.651);
   --stripe-price-bc: #323232;
+  --header-cart-area: #f6f6f6;
 }

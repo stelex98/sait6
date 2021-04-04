@@ -5,7 +5,7 @@
   margin: 5px 0;
 }
 .header__cartmenu-block {
-  background: #f6f6f6;
+  background: var(--header-cart-area);
   display: flex;
   align-items: center;
   flex-wrap: wrap;

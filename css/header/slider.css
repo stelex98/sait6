@@ -41,8 +41,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  max-width: 350px;
-  color: #fff;
+  max-width: 70%;
+  color: var(--link-colorWhite);
 }
 .slider-image-block1-title {
   text-transform: uppercase;
@@ -79,9 +79,9 @@
   position: absolute;
   bottom: 10px;
   left: 0;
-  max-width: 300px;
+  max-width: 80%;
   background: var(--text-bg);
-  color: #fff;
+  color: var(--link-colorWhite);
 }
 .slider-block2-title {
   text-transform: uppercase;

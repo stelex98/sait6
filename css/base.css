@@ -6,6 +6,11 @@
 }
 * {
   box-sizing: border-box;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
 }
 *:hover {
   transition: 0.3s linear;
@@ -45,9 +50,7 @@ a:active {
     opacity: 1;
   }
 }
-html {
-  font-size: 1em;
-}
+
 body {
   text-rendering: optimizeLegibility;
   background-color: var(--body-bgcolog);
