@@ -1,17 +1,15 @@
 .header__topmenu {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
 }
 .header__topmenu-link {
-	color: var(--body-fontColor);
-	font-size: 1em;
-	padding: 3px 12px;
-    
+  color: var(--body-fontColor);
+  font-size: 1em;
+  padding: 3px 12px;
 }
 .header__topmenu-link:hover {
-	transition: 0.3s linear;
-	color: var(--link-colorRed);
+  color: var(--link-colorRed);
 }

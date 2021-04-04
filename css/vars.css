@@ -1,15 +1,15 @@
 :root {
-    --body-bgcolog: #fff;
-    --body-fontSize: 1em;
-    --body-fontColor: #434343;
-    --container-size: 1440px;
-    --link-colorWhite: #fff;
-    --link-colorRed: #f0626e;
-    --link-colorBlue: #05aecc;
-    --link-colorBlue-dark: #00a1be;
-    --box-width: 1170px;
-    --shadow-color: #555;
-    --line-color: #b9b9b9;
-    --text-bg: rgba(87, 75, 100, 0.651);
-    --stripe-price-bc: #323232;
-  }
+  --body-bgcolog: #fff;
+  --body-fontSize: 100%;
+  --body-fontColor: #434343;
+  --container-size: 1440px;
+  --link-colorWhite: #fff;
+  --link-colorRed: #f0626e;
+  --link-colorBlue: #05aecc;
+  --link-colorBlue-dark: #00a1be;
+  --box-width: 1170px;
+  --shadow-color: #555;
+  --line-color: #b9b9b9;
+  --text-bg: rgba(87, 75, 100, 0.651);
+  --stripe-price-bc: #323232;
+}

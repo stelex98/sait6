@@ -1,5 +1,5 @@
 .header {
-  box-sizing: border-box;
+  max-width: 100%;
 }
 .header__logo {
   margin: 0 5px;

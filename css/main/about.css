@@ -1,10 +1,10 @@
-.main__about-us{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.main__about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.about-text{
-    padding: 5px 20px;
-    text-align: justify;
+.about-text {
+  padding: 5px 20px;
+  text-align: justify;
 }

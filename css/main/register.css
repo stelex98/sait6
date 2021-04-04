@@ -1,35 +1,34 @@
 .register {
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	align-items: center;
-	align-self: stretch;
-	flex-basis: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: stretch;
+  flex-basis: 100%;
 }
 .register__img {
-	cursor: pointer;
-	max-width: 100%;
-	padding: 10px;
+  cursor: pointer;
+  max-width: 100%;
+  padding: 10px;
 }
 .register__img:hover {
-	box-shadow: 0 0 20px var(--shadow-color);
+  box-shadow: 0 0 20px var(--shadow-color);
 }
 .register__button {
-	cursor: pointer;
-	margin-top: 20px;
-	background: var(--link-colorBlue);
-	color: var(--link-colorWhite);
-	transition: 0.3s linear;
-	font-size: 1.6rem;
-	padding: 15px 0;
-	border: none;
-	outline: none;
-	text-align: center;
-	margin: 10px auto;
-	width: 450px;
-	max-width: 90%;
-	text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 20px;
+  background: var(--link-colorBlue);
+  color: var(--link-colorWhite);
+  font-size: 1.6rem;
+  padding: 15px 0;
+  border: none;
+  outline: none;
+  text-align: center;
+  margin: 10px auto;
+  width: 450px;
+  max-width: 90%;
+  text-transform: capitalize;
 }
 .register__button:hover {
-	background: var(--link-colorRed);
+  background: var(--link-colorRed);
 }

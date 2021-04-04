@@ -3,7 +3,6 @@
   max-width: 370px;
   cursor: pointer;
   margin: 10px 8px;
-  transition: 0.3s linear;
   display: inline-table;
 }
 .product__card-new-img {

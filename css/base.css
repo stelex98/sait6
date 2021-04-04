@@ -12,17 +12,11 @@
   -ms-transition: 0.3s linear;
   -o-transition: 0.3s linear;
 }
-* a {
+a {
   text-decoration: none;
 }
-*:hover{
-  transition: 0.3s linear;
-  -webkit-transition: 0.3s linear;
-  -moz-transition: 0.3s linear;
-  -ms-transition: 0.3s linear;
-  -o-transition: 0.3s linear;
-}
-*> a:active{
+
+a:active{
   text-decoration: underline;
 }
 @keyframes show {
@@ -46,6 +40,7 @@ html {
   font-size: 1em;
 }
 body {
+  text-rendering: optimizeLegibility;
   background-color: var(--body-bgcolog);
   font-size: var(--body-fontSize);
   color: var(--body-fontColor);
@@ -54,13 +49,11 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 5px;
-  box-sizing: border-box;
   width: var(--container-size);
   max-width: 100%;
   box-shadow: 0 0 20px var(--shadow-color);
 }
 .box {
-  box-sizing: border-box;
   width: var(--box-width);
   max-width: 100%;
   margin: 0 auto;
