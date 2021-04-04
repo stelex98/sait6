@@ -6,6 +6,8 @@
 }
 * {
   box-sizing: border-box;
+}
+*:hover{
   transition: 0.3s linear;
   -webkit-transition: 0.3s linear;
   -moz-transition: 0.3s linear;
