@@ -88,3 +88,7 @@
 .header__megamenu-see-all:hover {
 	color: var(--link-colorBlue);
 }
+.megamenu-internallist-img{
+	width:76px;
+	max-width: 100%;
+} 

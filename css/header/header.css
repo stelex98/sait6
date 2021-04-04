@@ -1,7 +1,16 @@
 .header {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 .header__logo {
-	margin: 0 5px;
-	background: var(--body-bgcolog);
+  margin: 0 5px;
+  background: var(--body-bgcolog);
+}
+.logo-img {
+  width: 153px;
+  max-width: 100%;
+}
+.whish-img,
+.cart-img {
+  width: 23px;
+  max-width: 100%;
 }
