@@ -6,19 +6,21 @@
 }
 * {
   box-sizing: border-box;
+ }
+ *:hover{
   transition: 0.3s linear;
   -webkit-transition: 0.3s linear;
   -moz-transition: 0.3s linear;
   -ms-transition: 0.3s linear;
   -o-transition: 0.3s linear;
-}
+ }
 a {
   text-decoration: none;
 }
-
 a:active{
   text-decoration: underline;
 }
+
 @keyframes show {
   0% {
     transform: scale(0.1, 0.1);
