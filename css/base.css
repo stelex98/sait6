@@ -1,25 +1,15 @@
-/* *::after,
+*::after,
 *::before {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-} */
-:root {
-  --body-bgcolog: #fff;
-  --body-fontSize: 1em;
-  --body-fontColor: #434343;
-  --container-size: 1440px;
-  --link-colorWhite: #fff;
-  --link-colorRed: #f0626e;
-  --link-colorBlue: #05aecc;
-  --link-colorBlue-dark: #00a1be;
-  --box-width: 1170px;
-  --shadow-color: #555;
-  --line-color: #b9b9b9;
-  --text-bg: rgba(87, 75, 100, 0.651);
-  --stripe-price-bc: #323232;
 }
-
+* {
+  box-sizing: border-box;
+}
+* a {
+  text-decoration: none;
+}
 @keyframes show {
   0% {
     transform: scale(0.1, 0.1);
@@ -37,12 +27,6 @@
   }
 }
 
-* {
-  box-sizing: border-box;
-}
-* a {
-  text-decoration: none;
-}
 html {
   font-size: 1em;
 }
@@ -50,7 +34,7 @@ body {
   background-color: var(--body-bgcolog);
   font-size: var(--body-fontSize);
   color: var(--body-fontColor);
-  font-family: 'Lato',Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lato", Verdana, Geneva, Tahoma, sans-serif;
 }
 .container {
   margin: 0 auto;
@@ -103,6 +87,24 @@ body {
   background: var(--text-bg);
   color: var(--link-colorWhite);
 }
+.little-cart-stripe-new {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  display: flex;
+  flex-flow: wrap row;
+  align-items: center;
+  justify-content: center;
+  color: var(--link-colorWhite);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  padding: 5px;
+  opacity: 0;
+}
 .little-cart-stripe-big {
   position: absolute;
   bottom: 5px;
@@ -115,7 +117,10 @@ body {
   background: var(--text-bg);
   color: var(--link-colorWhite);
 }
-
+.little-cart-stripe-new p {
+  padding: 10px;
+  margin: 0;
+}
 .little-cart-stripe p {
   padding: 10px;
   margin: 0;
@@ -132,6 +137,8 @@ body {
 .stripe__wish,
 .stripe__cart,
 .stripe__price {
+  display: flex;
+  justify-content: center;
   flex-grow: 1;
   align-self: stretch;
   align-items: center;
