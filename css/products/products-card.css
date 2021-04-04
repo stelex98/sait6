@@ -13,7 +13,9 @@
   box-shadow: 0 0 10px var(--shadow-color);
 }
 .product__card-new:hover > .little-cart-stripe-new {
-  opacity: 1;
+  visibility: visible;
+  animation: fade-in 0.3s linear;
+  -webkit-animation: fade-in 0.3s linear;
 }
 .new-product {
   position: absolute;
