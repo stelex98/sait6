@@ -5,11 +5,14 @@
 	align-items: center;
 	align-self: stretch;
 	flex-basis: 100%;
-	max-width: 100%;
 }
 .register__img {
+	cursor: pointer;
 	max-width: 100%;
 	padding: 10px;
+}
+.register__img:hover {
+	box-shadow: 0 0 20px var(--shadow-color);
 }
 .register__button {
 	cursor: pointer;

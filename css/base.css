@@ -6,9 +6,24 @@
 }
 * {
   box-sizing: border-box;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
 }
 * a {
   text-decoration: none;
+}
+*:hover{
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+*> a:active{
+  text-decoration: underline;
 }
 @keyframes show {
   0% {
@@ -141,11 +156,14 @@ body {
   justify-content: center;
   flex-grow: 1;
   align-self: stretch;
-  align-items: center;
+  align-items: center;  
 }
 .stripe__text-blue {
   color: var(--link-colorWhite);
   background: var(--link-colorBlue);
+}
+.stripe__text-blue:hover {
+  background: var(--link-colorRed);
 }
 .stripe__text-dark {
   font-size: 2em;
@@ -156,8 +174,14 @@ body {
 .stripe__whish {
   background: var(--link-colorBlue-dark);
 }
+.stripe__whish:hover {
+  background: var(--link-colorRed);
+}
 .stripe__cart {
   background: var(--link-colorRed);
+}
+.stripe__cart:hover {
+  background: var(--link-colorBlue);
 }
 .stripe__price {
   background: var(--stripe-price-bc);
