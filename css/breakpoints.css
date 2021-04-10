@@ -81,7 +81,7 @@
   .header__megamenu-list {
     display: none;
   }
-  .header__megamenu{
+  .header__megamenu {
     order: 0;
   }
   .header__cartmenu-block {
@@ -183,11 +183,13 @@
   .carousel {
     width: 200px;
   }
-  /* .carousel2 {
-    width: 200px;
+  .product__description-block {
+    flex-wrap: wrap;
   }
-  .product__card-img{
-    max-width: 100%;
+  .product__description-paragraph,
+  .product__description-price {
+    flex-basis: 50%;
+    flex-grow:0;
     flex-shrink: 2;
-  } */
+  }
 }
