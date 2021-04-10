@@ -35,8 +35,15 @@
   text-align: left;
   overflow-y: auto;
 }
-.close-menu{
-    font-size: 1.5em;
-    border-bottom: 2px solid var(--link-colorWhite);
-    justify-content: center;
+.mobile > li:hover {
+  background: var(--link-colorWhite);
+}
+.mobile > li:hover a {
+  color: var(--link-colorRed);
+}
+
+.close-menu {
+  font-size: 1.5em;
+  border-bottom: 2px solid var(--link-colorWhite);
+  justify-content: center;
 }
