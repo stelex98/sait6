@@ -25,6 +25,7 @@
   left: 0;
   background: var(--link-colorBlue);
   width: 99%;
+  height: 100vh;
   z-index: 2;
   list-style: none;
   padding: 10px;
