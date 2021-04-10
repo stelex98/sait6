@@ -60,6 +60,9 @@ body {
   width: var(--container-size);
   max-width: 100%;
   box-shadow: 0 0 20px var(--shadow-color);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 .box {
   width: var(--box-width);
@@ -219,4 +222,7 @@ body {
 
 .arrow-right:hover {
   background: var(--link-colorRed);
+}
+.none{
+  display: none;
 }

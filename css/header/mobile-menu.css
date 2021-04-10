@@ -1,0 +1,21 @@
+.start-mobile-menu {
+  display: none;
+}
+.mobile-menu-text {
+  color: var(--link-colorWhite);
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  padding: 0 10px;
+}
+.mobile-menu-icon {
+  cursor: pointer;
+  display: block;
+  width: 45px;
+  margin: 0 10px;
+  color: var(--link-colorWhite);
+  font-size: 1em;
+  letter-spacing: 2px;
+  padding: 1px 0 5px 0;
+  border-top: 2px solid var(--link-colorWhite);
+  border-bottom: 2px solid var(--link-colorWhite);
+}

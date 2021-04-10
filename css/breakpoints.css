@@ -72,6 +72,18 @@
   }
 }
 @media (max-width: 653px) {
+  .start-mobile-menu {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__megamenu-list {
+    display: none;
+  }
+  .header__megamenu{
+    order: 0;
+  }
   .header__cartmenu-block {
     justify-content: space-evenly;
   }
