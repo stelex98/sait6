@@ -19,3 +19,24 @@
   border-top: 2px solid var(--link-colorWhite);
   border-bottom: 2px solid var(--link-colorWhite);
 }
+.mobile {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  background: var(--link-colorBlue);
+  width: 99%;
+  z-index: 2;
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  text-align: left;
+  overflow-y: auto;
+}
+.close-menu{
+    font-size: 1.5em;
+    border-bottom: 2px solid var(--link-colorWhite);
+    justify-content: center;
+}
