@@ -91,6 +91,7 @@
     padding: 5px;
   }
   .header__cartmenu-link {
+    padding: 10px 0;
     max-width: 100%;
   }
   .header__logo img {
