@@ -158,6 +158,16 @@
     width: 290px;
   }
 }
+@media (max-width: 480px) {
+ .header__cartmenu-link{
+   flex-basis: 40%;
+ }
+ .footer__copyright{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+}
 @media (max-width: 445px) {
   .search__input {
     margin: 30px 0 30px 10px;
