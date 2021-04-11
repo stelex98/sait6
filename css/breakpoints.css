@@ -82,7 +82,7 @@
     display: none;
   }
   .header__megamenu {
-    order: 0;
+    order: -2;
   }
   .header__cartmenu-block {
     justify-content: space-evenly;

@@ -1,5 +1,7 @@
 .header {
   max-width: 100%;
+  display: flex;
+  flex-flow: nowrap column;
 }
 .header__logo {
   margin: 0 5px;
