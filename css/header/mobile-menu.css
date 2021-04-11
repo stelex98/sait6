@@ -2,10 +2,13 @@
   display: none;
 }
 .mobile-menu-text {
+  display: block;
+  width: 110px;
+  background: var(--link-colorWhite);
   color: var(--link-colorWhite);
   font-size: 1.5em;
   letter-spacing: 2px;
-  padding: 0 10px;
+  padding: 5px;
 }
 .mobile-menu-icon {
   cursor: pointer;
@@ -36,7 +39,7 @@
   text-align: left;
   overflow-y: auto;
 }
-.mobile li> a{
+.mobile li > a {
   font-size: 1.5em;
 }
 .mobile > li:hover {
@@ -47,7 +50,11 @@
 }
 
 .close-menu {
-  font-size: .5em;
+  font-size: 0.5em;
   border-bottom: 2px solid var(--link-colorWhite);
   justify-content: center;
+}
+.mobile-logo-img {
+  width: 100px;
+  padding: 5px;
 }
