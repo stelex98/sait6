@@ -133,15 +133,21 @@
     flex-wrap: wrap;
   }
   .header__slider-small-block,
-  .main__search-block2 {
+  .main__search-block1,
+  .main__search-block2,
+  .slider-image,
+  .search-image,
+  .header__slider-big,
+  .header__slider-small {
+    min-width: 100%;
     flex-basis: 100%;
     align-self: stretch;
     flex-grow: 1;
+    padding: 2px 0;
+    margin: 0;
   }
-  .slider-image,
-  .search-image {
-    min-width: 100%;
-  }
+
+  
 }
 @media (max-width: 580px) {
   .carousel2 {
@@ -189,7 +195,7 @@
   .product__description-paragraph,
   .product__description-price {
     flex-basis: 50%;
-    flex-grow:0;
+    flex-grow: 0;
     flex-shrink: 2;
   }
 }
