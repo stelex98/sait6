@@ -83,6 +83,26 @@ function startMovement(e) {
     }
   });
 }
+
+karusel1.addEventListener("touchstart", startMovement2);
+function startMovement2(e) {
+  let check = false;
+  //xCoordinateStart = e.pageX;
+  xCoordinateStart = e.changedTouches[0].clientX;
+  karusel1.addEventListener("touchend", (e) => {
+    //xCoordinateMovement = e.pageX;
+    xCoordinateMovement = e.changedTouches[0].clientX;
+
+    if (xCoordinateMovement < xCoordinateStart && !check) {
+      shiftLeft();
+      check = true;
+    }
+    if (xCoordinateMovement > xCoordinateStart && !check) {
+      shiftRight();
+      check = true;
+    }
+  });
+}
 ////// left & right
 left.addEventListener("click", shiftLeft);
 left.addEventListener("mousedown", function (down) {
