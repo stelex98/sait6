@@ -28,8 +28,12 @@ const images2 = document.querySelectorAll(`#slide2 .product__card`);
 const allImgAmaunt2 = images2.length;
 
 document.addEventListener("DOMContentLoaded", function (event) {
-  window.onload=()=> {size();}
-  window.onresize = ()=> {size();}
+  window.onload = () => {
+    size();
+  };
+  window.onresize = () => {
+    size();
+  };
 });
 
 function size() {
@@ -69,7 +73,7 @@ let xCoordinateMovement = 0;
 let xCoordinateStart = 0;
 karusel1.addEventListener("dragstart", startMovement);
 function startMovement(e) {
-  let check = false;
+  check = false;
   xCoordinateStart = e.pageX;
   karusel1.addEventListener("dragend", (e) => {
     xCoordinateMovement = e.pageX;
@@ -83,21 +87,22 @@ function startMovement(e) {
     }
   });
 }
-
-karusel1.addEventListener("touchstart", startMovement2);
-function startMovement2(e) {
-  let check = false;
+let xCoordinateMovement1_1 = 0;
+let xCoordinateStart1_1 = 0;
+karusel1.addEventListener("touchstart", startMovement1_1);
+function startMovement1_1(e) {
+  check = false;
   //xCoordinateStart = e.pageX;
-  xCoordinateStart = e.changedTouches[0].clientX;
+  xCoordinateStart1_1 = e.changedTouches[0].clientX;
   karusel1.addEventListener("touchend", (e) => {
     //xCoordinateMovement = e.pageX;
-    xCoordinateMovement = e.changedTouches[0].clientX;
+    xCoordinateMovement1_1 = e.changedTouches[0].clientX;
 
-    if (xCoordinateMovement < xCoordinateStart && !check) {
+    if (xCoordinateMovement1_1 < xCoordinateStart1_1 && !check) {
       shiftLeft();
       check = true;
     }
-    if (xCoordinateMovement > xCoordinateStart && !check) {
+    if (xCoordinateMovement1_1 > xCoordinateStart1_1 && !check) {
       shiftRight();
       check = true;
     }
@@ -187,6 +192,27 @@ function startMovement2(e) {
     }
   });
 }
+let xCoordinateMovement2_1 = 0;
+let xCoordinateStart2_1 = 0;
+karusel2.addEventListener("touchstart", startMovement2_1);
+function startMovement2_1(e) {
+  check = false;
+  //xCoordinateStart = e.pageX;
+  xCoordinateStart2_1 = e.changedTouches[0].clientX;
+  karusel2.addEventListener("touchend", (e) => {
+    //xCoordinateMovement = e.pageX;
+    xCoordinateMovement2_1 = e.changedTouches[0].clientX;
+
+    if (xCoordinateMovement2_1 < xCoordinateStart2_1 && !check) {
+      shiftLeft2();
+      check = true;
+    }
+    if (xCoordinateMovement2_1 > xCoordinateStart2_1 && !check) {
+      shiftRight2();
+      check = true;
+    }
+  });
+}
 ////// left & right
 left2.addEventListener("click", shiftLeft2);
 left2.addEventListener("mousedown", function (down) {
@@ -212,7 +238,6 @@ right2.addEventListener("mousedown", function (down) {
 //SLIDER
 
 function shiftLeft2() {
-  
   if (offset2 != 0) shiftX_2 += offset2;
   if (counter2 == allImgAmaunt2 - amountImgForShow2) {
     shiftX_2 -= offset2;
